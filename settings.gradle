@@ -1,0 +1,3 @@
+rootProject.name='YuYin'
+include ':app'
+include ':mylibrary'
