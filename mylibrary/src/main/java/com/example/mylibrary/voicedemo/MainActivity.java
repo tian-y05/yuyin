@@ -1,6 +1,7 @@
 package com.example.mylibrary.voicedemo;
 
 import com.example.mylibrary.R;
+import com.example.mylibrary.mscv5plusdemo.IvwActivity;
 import com.iflytek.cloud.SpeechUtility;
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -69,8 +70,8 @@ public class MainActivity extends Activity implements OnClickListener {
 			intent = new Intent(MainActivity.this, TtsDemo.class);
 			break;
 		case 2:
-			// 语义理解
-			showTip("请登录：http://www.xfyun.cn/ 下载aiui体验吧！");
+			// 唤醒
+			intent = new Intent(MainActivity.this, IvwActivity.class);
 			break;
 		case 3:
 			// 语法识别
@@ -107,7 +108,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	}
 
 	// Menu 列表立刻体验语音合成立刻体验语法识别
-	String items[] = { "立刻体验语音听写", "立刻体验语音合成"/*, "立刻体验语义理解", "立刻体验语法识别",
+	String items[] = { "立刻体验语音听写", "立刻体验语音合成", "立刻体验语音唤醒", /*"立刻体验语法识别",
 			"立刻体验语音评测", "立刻体验语音唤醒", "立刻体验声纹密码","立刻体验人脸识别","重置域名"*/ };
 
 	private class SimpleAdapter extends BaseAdapter {

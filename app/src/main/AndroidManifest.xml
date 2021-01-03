@@ -56,6 +56,9 @@
         <activity android:name="com.example.mylibrary.voicedemo.TtsDemo"/>
 
         <activity android:name="com.example.mylibrary.voicedemo.vocalverify.VocalVerifyDemo"/>
+        <activity android:name="com.example.mylibrary.mscv5plusdemo.IvwActivity"/>
+        <activity android:name="com.example.mylibrary.mscv5plusdemo.OneShotDemo"/>
+        <activity android:name="com.example.mylibrary.mscv5plusdemo.WakeDemo"/>
 
         <meta-data
             android:name="IFLYTEK_APPKEY"
